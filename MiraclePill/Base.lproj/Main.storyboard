@@ -248,21 +248,10 @@
                     </view>
                     <connections>
                         <outlet property="buyNowBtn" destination="ucS-b4-qmF" id="73B-Gl-Y9l"/>
-                        <outlet property="cityLbl" destination="eot-nh-gEe" id="v2B-Ww-0bl"/>
-                        <outlet property="cityTxt" destination="qY2-o2-TpW" id="3IA-Uo-vJm"/>
                         <outlet property="countryLbl" destination="VwO-SR-FVQ" id="RYb-od-SAa"/>
                         <outlet property="countryTxt" destination="Gqy-1u-ykC" id="Yve-hB-4XP"/>
-                        <outlet property="dividerView" destination="Rxx-if-jTq" id="SdA-RD-aPa"/>
-                        <outlet property="miraclePillCostLbl" destination="ss9-Hv-YkS" id="e6R-j7-6ZP"/>
-                        <outlet property="miraclePillLbl" destination="faB-1I-vmK" id="5Wh-ai-Kck"/>
-                        <outlet property="miraclePillView" destination="NG8-NW-j7E" id="FHg-zq-6kB"/>
-                        <outlet property="nameLbl" destination="iKF-t5-irs" id="pfi-ab-2cW"/>
-                        <outlet property="nameTxt" destination="k3n-1s-MLS" id="baq-r1-Lzh"/>
-                        <outlet property="stateLbl" destination="axS-kM-B4s" id="wJI-D5-fBj"/>
                         <outlet property="statePicker" destination="uuI-eK-TdL" id="YAc-J4-Rz9"/>
-                        <outlet property="statePickerBtn" destination="HA0-82-gMj" id="LJK-dn-gVY"/>
-                        <outlet property="streetAddressLbl" destination="6MZ-Yh-tkb" id="Wdd-cC-Yx0"/>
-                        <outlet property="streetAddressTxt" destination="VUx-BY-EOh" id="SWI-i0-k4Y"/>
+                        <outlet property="statePickerBtn" destination="HA0-82-gMj" id="id7-H0-rHS"/>
                         <outlet property="successView" destination="qzZ-cu-qMN" id="XeR-lk-nY9"/>
                         <outlet property="zipCodeLbl" destination="D0P-xV-rWZ" id="6Re-iF-7vf"/>
                         <outlet property="zipCodeTxt" destination="vTx-6r-fdd" id="dnc-A4-jwO"/>

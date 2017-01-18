@@ -10,17 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    @IBOutlet weak var miraclePillView: UIImageView!
-    @IBOutlet weak var miraclePillLbl: UILabel!
-    @IBOutlet weak var miraclePillCostLbl: UILabel!
-    @IBOutlet weak var dividerView: UIView!
-    @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var nameTxt: UITextField!
-    @IBOutlet weak var streetAddressLbl: UILabel!
-    @IBOutlet weak var streetAddressTxt: UITextField!
-    @IBOutlet weak var cityLbl: UILabel!
-    @IBOutlet weak var cityTxt: UITextField!
-    @IBOutlet weak var stateLbl: UILabel!
     @IBOutlet weak var countryLbl: UILabel!
     @IBOutlet weak var countryTxt: UITextField!
     @IBOutlet weak var zipCodeLbl: UILabel!
@@ -53,26 +42,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     @IBAction func buyNowBtnPressed(_ sender: Any) {
-    
-        miraclePillView.isHidden = true
-        miraclePillLbl.isHidden = true
-        miraclePillCostLbl.isHidden = true
-        dividerView.isHidden = true
-        nameLbl.isHidden = true
-        nameTxt.isHidden = true
-        streetAddressLbl.isHidden = true
-        streetAddressTxt.isHidden = true
-        cityLbl.isHidden = true
-        cityTxt.isHidden = true
-        stateLbl.isHidden = true
-        countryLbl.isHidden = true
-        countryTxt.isHidden = true
-        zipCodeLbl.isHidden = true
-        zipCodeTxt.isHidden = true
-        statePicker.isHidden = true
-        statePickerBtn.isHidden = true
-        buyNowBtn.isHidden = true
+        
+        for view in self.view.subviews as [UIView] {
+            view.isHidden = true
+        }
+        
         successView.isHidden = false
+        
+        // Other way to do this is using tag in view
+        /*for tag in 1...14 {
+            self.view.viewWithTag(tag)?.isHidden = true
+        }*/
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
